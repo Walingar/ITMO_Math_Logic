@@ -24,6 +24,6 @@ let check_expression_tree expression ind = begin
 	let checked_expression = checked_expression expression ind in
 		update_mp_table expression ind;
 		update_new_mp_table expression ind;
-		Hashtbl.replace !exp expression ind;
+		Hashtbl.replace !exp1 expression ind;
 		checked_expression
 end;;

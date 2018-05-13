@@ -33,8 +33,8 @@ expr:
 
 
 header:
-		expressions PROOF expr EOF { ($1, $3) }
-		|PROOF expr EOF            { ([], $2) }
+		expressions GENERAL expr EOF { ($1, $3) }
+		|GENERAL expr EOF            { ([], $2) }
 
 expressions:
 		expr                    { [$1] }

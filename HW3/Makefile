@@ -1,6 +1,6 @@
 .PHONY: pack all run clean
 GENERATED=src/parser.mli src/parser.ml src/lexer.ml
-SOURCES=utils.ml assumption.ml axioms.ml mp.ml checker.ml deduction.ml main.ml
+SOURCES=utils.ml assumption.ml axioms.ml mp.ml checker.ml deduction.ml proof.ml main.ml
 OCAMLC=ocamlc
 PACKAGE=hw3.zip
 
