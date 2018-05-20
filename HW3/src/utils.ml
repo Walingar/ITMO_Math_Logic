@@ -12,14 +12,14 @@ let parse_data_lines expressions a b c = List.map (fun expression -> parse_data_
 
 let read_data_file file_name = 
 	let lines = ref [] in
-	let inp = open_in file_name in
+	let getInp = open_in file_name in
 	try
 		while true do
-			lines := input_line (inp) :: !lines	
+			lines := input_line (getInp) :: !lines
 		done;
 		!lines
 	with 
 		|End_of_file -> 
-			close_in inp;
+			close_in getInp;
 			List.rev !lines
 ;;
